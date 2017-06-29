@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="mainTitle">Web RTC TEST 해보자 </title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body onload="Init()">
+        <div>
+            <video id="videoLocal" autoplay></video>
+            <video id="videoRemote" autoplay></video>
+        </div>
+
+        <div>
+            <button id="btnLocalVideoOpen" onclick="LocalVideoOpen()">LocalVideoOpen</button>
+            <button id="btnLocalVideoClose" onclick="LocalVideoClose()">LocalVideoClose</button>
+            <button id="btnRemoteVideoOpen" onclick="RemoteVideoOpen()">RemoteVideoOpen</button>
+        </div>
+
+        <script src="js/lib/adapter.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
